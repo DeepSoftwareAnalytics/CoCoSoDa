@@ -45,7 +45,7 @@ It will take about 10min.
 ### Training and Evaualtion
 
 We have uploaded the pre-trained model to  [huggingface](https://huggingface.co/). You can directly download [DeepSoftwareAnalytics/CoCoSoDa](https://huggingface.co/DeepSoftwareAnalytics/CoCoSoDa) and fine-tune it. 
-#### MultiModal Momentum Contrastive Learning (Optional)
+#### Pre-training (Optional)
 
 ```
 bash run_cocosoda.sh $lang 
