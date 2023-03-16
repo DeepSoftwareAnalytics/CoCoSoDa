@@ -61,6 +61,13 @@ It will take about 3 days.
 lang=java
 bash run_fine_tune.sh $lang 
 ```
+#### Zero-shot running
+
+```
+lang=python
+bash run_zero-shot.sh $lang 
+```
+
 
 ### Results	
 
@@ -73,3 +80,7 @@ bash run_fine_tune.sh $lang
 ## Appendix
 
 The description of baselines, addtional experimetal results and discussion are shown in `Appendix/Appendix.pdf`. 
+
+
+## Contact
+Feel free to contact Ensheng Shi (enshengshi@qq.com) if you have any further questions or no response to github issue for more than 1 day.
