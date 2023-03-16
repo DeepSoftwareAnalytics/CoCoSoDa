@@ -530,10 +530,10 @@ def train(args, model, tokenizer,pool):
     if args.data_aug_type ==  "replace_type" :
         train_dataset=TextDataset(tokenizer, args, args.train_data_file, pool)
     else:
-        if "unixcoder" in args.model_name_or_path or "coco" in args.model_name_or_path :
-            train_dataset=TextDataset_unixcoder(tokenizer, args, args.train_data_file, pool)
-        else:
-            train_dataset=TextDataset(tokenizer, args, args.train_data_file, pool)
+        # if "unixcoder" in args.model_name_or_path or "coco" in args.model_name_or_path :
+        train_dataset=TextDataset_unixcoder(tokenizer, args, args.train_data_file, pool)
+        # else:
+        #     train_dataset=TextDataset(tokenizer, args, args.train_data_file, pool)
     train_sampler = RandomSampler(train_dataset)
     train_dataloader = DataLoader(train_dataset, sampler=train_sampler, batch_size=args.train_batch_size,num_workers=4,drop_last=True)
 
@@ -840,10 +840,10 @@ def  multi_lang_continue_pre_train(args, model, tokenizer,pool):
 
 
 def evaluate(args, model, tokenizer,file_name,pool, eval_when_training=False):
-    if "unixcoder" in args.model_name_or_path or "coco" in args.model_name_or_path :
-        dataset_class = TextDataset_unixcoder
-    else:
-        dataset_class = TextDataset
+    # if "unixcoder" in args.model_name_or_path or "coco" in args.model_name_or_path :
+    dataset_class = TextDataset_unixcoder
+    # else:
+        # dataset_class = TextDataset
     query_dataset = dataset_class(tokenizer, args, file_name, pool)
     query_sampler = SequentialSampler(query_dataset)
     query_dataloader = DataLoader(query_dataset, sampler=query_sampler, batch_size=args.eval_batch_size,num_workers=4)
