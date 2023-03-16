@@ -1,0 +1,216 @@
+03/15/2023 22:39:50 - INFO - __main__ -   device: cuda, n_gpu: 1
+03/15/2023 22:39:55 - INFO - __main__ -   +------------------------------------------------------------+--------------+----------+
+| Layer Name                                                 | Output Shape |  Param # |
++------------------------------------------------------------+--------------+----------+
+| encoder.embeddings.word_embeddings.weight                  | [51451, 768] | 39514368 |
+| encoder.embeddings.position_embeddings.weight              |  [1026, 768] |   787968 |
+| encoder.embeddings.token_type_embeddings.weight            |    [10, 768] |     7680 |
+| encoder.embeddings.LayerNorm.weight                        |        [768] |      768 |
+| encoder.embeddings.LayerNorm.bias                          |        [768] |      768 |
+| encoder.encoder.layer.0.attention.self.query.weight        |   [768, 768] |   589824 |
+| encoder.encoder.layer.0.attention.self.query.bias          |        [768] |      768 |
+| encoder.encoder.layer.0.attention.self.key.weight          |   [768, 768] |   589824 |
+| encoder.encoder.layer.0.attention.self.key.bias            |        [768] |      768 |
+| encoder.encoder.layer.0.attention.self.value.weight        |   [768, 768] |   589824 |
+| encoder.encoder.layer.0.attention.self.value.bias          |        [768] |      768 |
+| encoder.encoder.layer.0.attention.output.dense.weight      |   [768, 768] |   589824 |
+| encoder.encoder.layer.0.attention.output.dense.bias        |        [768] |      768 |
+| encoder.encoder.layer.0.attention.output.LayerNorm.weight  |        [768] |      768 |
+| encoder.encoder.layer.0.attention.output.LayerNorm.bias    |        [768] |      768 |
+| encoder.encoder.layer.0.intermediate.dense.weight          |  [3072, 768] |  2359296 |
+| encoder.encoder.layer.0.intermediate.dense.bias            |       [3072] |     3072 |
+| encoder.encoder.layer.0.output.dense.weight                |  [768, 3072] |  2359296 |
+| encoder.encoder.layer.0.output.dense.bias                  |        [768] |      768 |
+| encoder.encoder.layer.0.output.LayerNorm.weight            |        [768] |      768 |
+| encoder.encoder.layer.0.output.LayerNorm.bias              |        [768] |      768 |
+| encoder.encoder.layer.1.attention.self.query.weight        |   [768, 768] |   589824 |
+| encoder.encoder.layer.1.attention.self.query.bias          |        [768] |      768 |
+| encoder.encoder.layer.1.attention.self.key.weight          |   [768, 768] |   589824 |
+| encoder.encoder.layer.1.attention.self.key.bias            |        [768] |      768 |
+| encoder.encoder.layer.1.attention.self.value.weight        |   [768, 768] |   589824 |
+| encoder.encoder.layer.1.attention.self.value.bias          |        [768] |      768 |
+| encoder.encoder.layer.1.attention.output.dense.weight      |   [768, 768] |   589824 |
+| encoder.encoder.layer.1.attention.output.dense.bias        |        [768] |      768 |
+| encoder.encoder.layer.1.attention.output.LayerNorm.weight  |        [768] |      768 |
+| encoder.encoder.layer.1.attention.output.LayerNorm.bias    |        [768] |      768 |
+| encoder.encoder.layer.1.intermediate.dense.weight          |  [3072, 768] |  2359296 |
+| encoder.encoder.layer.1.intermediate.dense.bias            |       [3072] |     3072 |
+| encoder.encoder.layer.1.output.dense.weight                |  [768, 3072] |  2359296 |
+| encoder.encoder.layer.1.output.dense.bias                  |        [768] |      768 |
+| encoder.encoder.layer.1.output.LayerNorm.weight            |        [768] |      768 |
+| encoder.encoder.layer.1.output.LayerNorm.bias              |        [768] |      768 |
+| encoder.encoder.layer.2.attention.self.query.weight        |   [768, 768] |   589824 |
+| encoder.encoder.layer.2.attention.self.query.bias          |        [768] |      768 |
+| encoder.encoder.layer.2.attention.self.key.weight          |   [768, 768] |   589824 |
+| encoder.encoder.layer.2.attention.self.key.bias            |        [768] |      768 |
+| encoder.encoder.layer.2.attention.self.value.weight        |   [768, 768] |   589824 |
+| encoder.encoder.layer.2.attention.self.value.bias          |        [768] |      768 |
+| encoder.encoder.layer.2.attention.output.dense.weight      |   [768, 768] |   589824 |
+| encoder.encoder.layer.2.attention.output.dense.bias        |        [768] |      768 |
+| encoder.encoder.layer.2.attention.output.LayerNorm.weight  |        [768] |      768 |
+| encoder.encoder.layer.2.attention.output.LayerNorm.bias    |        [768] |      768 |
+| encoder.encoder.layer.2.intermediate.dense.weight          |  [3072, 768] |  2359296 |
+| encoder.encoder.layer.2.intermediate.dense.bias            |       [3072] |     3072 |
+| encoder.encoder.layer.2.output.dense.weight                |  [768, 3072] |  2359296 |
+| encoder.encoder.layer.2.output.dense.bias                  |        [768] |      768 |
+| encoder.encoder.layer.2.output.LayerNorm.weight            |        [768] |      768 |
+| encoder.encoder.layer.2.output.LayerNorm.bias              |        [768] |      768 |
+| encoder.encoder.layer.3.attention.self.query.weight        |   [768, 768] |   589824 |
+| encoder.encoder.layer.3.attention.self.query.bias          |        [768] |      768 |
+| encoder.encoder.layer.3.attention.self.key.weight          |   [768, 768] |   589824 |
+| encoder.encoder.layer.3.attention.self.key.bias            |        [768] |      768 |
+| encoder.encoder.layer.3.attention.self.value.weight        |   [768, 768] |   589824 |
+| encoder.encoder.layer.3.attention.self.value.bias          |        [768] |      768 |
+| encoder.encoder.layer.3.attention.output.dense.weight      |   [768, 768] |   589824 |
+| encoder.encoder.layer.3.attention.output.dense.bias        |        [768] |      768 |
+| encoder.encoder.layer.3.attention.output.LayerNorm.weight  |        [768] |      768 |
+| encoder.encoder.layer.3.attention.output.LayerNorm.bias    |        [768] |      768 |
+| encoder.encoder.layer.3.intermediate.dense.weight          |  [3072, 768] |  2359296 |
+| encoder.encoder.layer.3.intermediate.dense.bias            |       [3072] |     3072 |
+| encoder.encoder.layer.3.output.dense.weight                |  [768, 3072] |  2359296 |
+| encoder.encoder.layer.3.output.dense.bias                  |        [768] |      768 |
+| encoder.encoder.layer.3.output.LayerNorm.weight            |        [768] |      768 |
+| encoder.encoder.layer.3.output.LayerNorm.bias              |        [768] |      768 |
+| encoder.encoder.layer.4.attention.self.query.weight        |   [768, 768] |   589824 |
+| encoder.encoder.layer.4.attention.self.query.bias          |        [768] |      768 |
+| encoder.encoder.layer.4.attention.self.key.weight          |   [768, 768] |   589824 |
+| encoder.encoder.layer.4.attention.self.key.bias            |        [768] |      768 |
+| encoder.encoder.layer.4.attention.self.value.weight        |   [768, 768] |   589824 |
+| encoder.encoder.layer.4.attention.self.value.bias          |        [768] |      768 |
+| encoder.encoder.layer.4.attention.output.dense.weight      |   [768, 768] |   589824 |
+| encoder.encoder.layer.4.attention.output.dense.bias        |        [768] |      768 |
+| encoder.encoder.layer.4.attention.output.LayerNorm.weight  |        [768] |      768 |
+| encoder.encoder.layer.4.attention.output.LayerNorm.bias    |        [768] |      768 |
+| encoder.encoder.layer.4.intermediate.dense.weight          |  [3072, 768] |  2359296 |
+| encoder.encoder.layer.4.intermediate.dense.bias            |       [3072] |     3072 |
+| encoder.encoder.layer.4.output.dense.weight                |  [768, 3072] |  2359296 |
+| encoder.encoder.layer.4.output.dense.bias                  |        [768] |      768 |
+| encoder.encoder.layer.4.output.LayerNorm.weight            |        [768] |      768 |
+| encoder.encoder.layer.4.output.LayerNorm.bias              |        [768] |      768 |
+| encoder.encoder.layer.5.attention.self.query.weight        |   [768, 768] |   589824 |
+| encoder.encoder.layer.5.attention.self.query.bias          |        [768] |      768 |
+| encoder.encoder.layer.5.attention.self.key.weight          |   [768, 768] |   589824 |
+| encoder.encoder.layer.5.attention.self.key.bias            |        [768] |      768 |
+| encoder.encoder.layer.5.attention.self.value.weight        |   [768, 768] |   589824 |
+| encoder.encoder.layer.5.attention.self.value.bias          |        [768] |      768 |
+| encoder.encoder.layer.5.attention.output.dense.weight      |   [768, 768] |   589824 |
+| encoder.encoder.layer.5.attention.output.dense.bias        |        [768] |      768 |
+| encoder.encoder.layer.5.attention.output.LayerNorm.weight  |        [768] |      768 |
+| encoder.encoder.layer.5.attention.output.LayerNorm.bias    |        [768] |      768 |
+| encoder.encoder.layer.5.intermediate.dense.weight          |  [3072, 768] |  2359296 |
+| encoder.encoder.layer.5.intermediate.dense.bias            |       [3072] |     3072 |
+| encoder.encoder.layer.5.output.dense.weight                |  [768, 3072] |  2359296 |
+| encoder.encoder.layer.5.output.dense.bias                  |        [768] |      768 |
+| encoder.encoder.layer.5.output.LayerNorm.weight            |        [768] |      768 |
+| encoder.encoder.layer.5.output.LayerNorm.bias              |        [768] |      768 |
+| encoder.encoder.layer.6.attention.self.query.weight        |   [768, 768] |   589824 |
+| encoder.encoder.layer.6.attention.self.query.bias          |        [768] |      768 |
+| encoder.encoder.layer.6.attention.self.key.weight          |   [768, 768] |   589824 |
+| encoder.encoder.layer.6.attention.self.key.bias            |        [768] |      768 |
+| encoder.encoder.layer.6.attention.self.value.weight        |   [768, 768] |   589824 |
+| encoder.encoder.layer.6.attention.self.value.bias          |        [768] |      768 |
+| encoder.encoder.layer.6.attention.output.dense.weight      |   [768, 768] |   589824 |
+| encoder.encoder.layer.6.attention.output.dense.bias        |        [768] |      768 |
+| encoder.encoder.layer.6.attention.output.LayerNorm.weight  |        [768] |      768 |
+| encoder.encoder.layer.6.attention.output.LayerNorm.bias    |        [768] |      768 |
+| encoder.encoder.layer.6.intermediate.dense.weight          |  [3072, 768] |  2359296 |
+| encoder.encoder.layer.6.intermediate.dense.bias            |       [3072] |     3072 |
+| encoder.encoder.layer.6.output.dense.weight                |  [768, 3072] |  2359296 |
+| encoder.encoder.layer.6.output.dense.bias                  |        [768] |      768 |
+| encoder.encoder.layer.6.output.LayerNorm.weight            |        [768] |      768 |
+| encoder.encoder.layer.6.output.LayerNorm.bias              |        [768] |      768 |
+| encoder.encoder.layer.7.attention.self.query.weight        |   [768, 768] |   589824 |
+| encoder.encoder.layer.7.attention.self.query.bias          |        [768] |      768 |
+| encoder.encoder.layer.7.attention.self.key.weight          |   [768, 768] |   589824 |
+| encoder.encoder.layer.7.attention.self.key.bias            |        [768] |      768 |
+| encoder.encoder.layer.7.attention.self.value.weight        |   [768, 768] |   589824 |
+| encoder.encoder.layer.7.attention.self.value.bias          |        [768] |      768 |
+| encoder.encoder.layer.7.attention.output.dense.weight      |   [768, 768] |   589824 |
+| encoder.encoder.layer.7.attention.output.dense.bias        |        [768] |      768 |
+| encoder.encoder.layer.7.attention.output.LayerNorm.weight  |        [768] |      768 |
+| encoder.encoder.layer.7.attention.output.LayerNorm.bias    |        [768] |      768 |
+| encoder.encoder.layer.7.intermediate.dense.weight          |  [3072, 768] |  2359296 |
+| encoder.encoder.layer.7.intermediate.dense.bias            |       [3072] |     3072 |
+| encoder.encoder.layer.7.output.dense.weight                |  [768, 3072] |  2359296 |
+| encoder.encoder.layer.7.output.dense.bias                  |        [768] |      768 |
+| encoder.encoder.layer.7.output.LayerNorm.weight            |        [768] |      768 |
+| encoder.encoder.layer.7.output.LayerNorm.bias              |        [768] |      768 |
+| encoder.encoder.layer.8.attention.self.query.weight        |   [768, 768] |   589824 |
+| encoder.encoder.layer.8.attention.self.query.bias          |        [768] |      768 |
+| encoder.encoder.layer.8.attention.self.key.weight          |   [768, 768] |   589824 |
+| encoder.encoder.layer.8.attention.self.key.bias            |        [768] |      768 |
+| encoder.encoder.layer.8.attention.self.value.weight        |   [768, 768] |   589824 |
+| encoder.encoder.layer.8.attention.self.value.bias          |        [768] |      768 |
+| encoder.encoder.layer.8.attention.output.dense.weight      |   [768, 768] |   589824 |
+| encoder.encoder.layer.8.attention.output.dense.bias        |        [768] |      768 |
+| encoder.encoder.layer.8.attention.output.LayerNorm.weight  |        [768] |      768 |
+| encoder.encoder.layer.8.attention.output.LayerNorm.bias    |        [768] |      768 |
+| encoder.encoder.layer.8.intermediate.dense.weight          |  [3072, 768] |  2359296 |
+| encoder.encoder.layer.8.intermediate.dense.bias            |       [3072] |     3072 |
+| encoder.encoder.layer.8.output.dense.weight                |  [768, 3072] |  2359296 |
+| encoder.encoder.layer.8.output.dense.bias                  |        [768] |      768 |
+| encoder.encoder.layer.8.output.LayerNorm.weight            |        [768] |      768 |
+| encoder.encoder.layer.8.output.LayerNorm.bias              |        [768] |      768 |
+| encoder.encoder.layer.9.attention.self.query.weight        |   [768, 768] |   589824 |
+| encoder.encoder.layer.9.attention.self.query.bias          |        [768] |      768 |
+| encoder.encoder.layer.9.attention.self.key.weight          |   [768, 768] |   589824 |
+| encoder.encoder.layer.9.attention.self.key.bias            |        [768] |      768 |
+| encoder.encoder.layer.9.attention.self.value.weight        |   [768, 768] |   589824 |
+| encoder.encoder.layer.9.attention.self.value.bias          |        [768] |      768 |
+| encoder.encoder.layer.9.attention.output.dense.weight      |   [768, 768] |   589824 |
+| encoder.encoder.layer.9.attention.output.dense.bias        |        [768] |      768 |
+| encoder.encoder.layer.9.attention.output.LayerNorm.weight  |        [768] |      768 |
+| encoder.encoder.layer.9.attention.output.LayerNorm.bias    |        [768] |      768 |
+| encoder.encoder.layer.9.intermediate.dense.weight          |  [3072, 768] |  2359296 |
+| encoder.encoder.layer.9.intermediate.dense.bias            |       [3072] |     3072 |
+| encoder.encoder.layer.9.output.dense.weight                |  [768, 3072] |  2359296 |
+| encoder.encoder.layer.9.output.dense.bias                  |        [768] |      768 |
+| encoder.encoder.layer.9.output.LayerNorm.weight            |        [768] |      768 |
+| encoder.encoder.layer.9.output.LayerNorm.bias              |        [768] |      768 |
+| encoder.encoder.layer.10.attention.self.query.weight       |   [768, 768] |   589824 |
+| encoder.encoder.layer.10.attention.self.query.bias         |        [768] |      768 |
+| encoder.encoder.layer.10.attention.self.key.weight         |   [768, 768] |   589824 |
+| encoder.encoder.layer.10.attention.self.key.bias           |        [768] |      768 |
+| encoder.encoder.layer.10.attention.self.value.weight       |   [768, 768] |   589824 |
+| encoder.encoder.layer.10.attention.self.value.bias         |        [768] |      768 |
+| encoder.encoder.layer.10.attention.output.dense.weight     |   [768, 768] |   589824 |
+| encoder.encoder.layer.10.attention.output.dense.bias       |        [768] |      768 |
+| encoder.encoder.layer.10.attention.output.LayerNorm.weight |        [768] |      768 |
+| encoder.encoder.layer.10.attention.output.LayerNorm.bias   |        [768] |      768 |
+| encoder.encoder.layer.10.intermediate.dense.weight         |  [3072, 768] |  2359296 |
+| encoder.encoder.layer.10.intermediate.dense.bias           |       [3072] |     3072 |
+| encoder.encoder.layer.10.output.dense.weight               |  [768, 3072] |  2359296 |
+| encoder.encoder.layer.10.output.dense.bias                 |        [768] |      768 |
+| encoder.encoder.layer.10.output.LayerNorm.weight           |        [768] |      768 |
+| encoder.encoder.layer.10.output.LayerNorm.bias             |        [768] |      768 |
+| encoder.encoder.layer.11.attention.self.query.weight       |   [768, 768] |   589824 |
+| encoder.encoder.layer.11.attention.self.query.bias         |        [768] |      768 |
+| encoder.encoder.layer.11.attention.self.key.weight         |   [768, 768] |   589824 |
+| encoder.encoder.layer.11.attention.self.key.bias           |        [768] |      768 |
+| encoder.encoder.layer.11.attention.self.value.weight       |   [768, 768] |   589824 |
+| encoder.encoder.layer.11.attention.self.value.bias         |        [768] |      768 |
+| encoder.encoder.layer.11.attention.output.dense.weight     |   [768, 768] |   589824 |
+| encoder.encoder.layer.11.attention.output.dense.bias       |        [768] |      768 |
+| encoder.encoder.layer.11.attention.output.LayerNorm.weight |        [768] |      768 |
+| encoder.encoder.layer.11.attention.output.LayerNorm.bias   |        [768] |      768 |
+| encoder.encoder.layer.11.intermediate.dense.weight         |  [3072, 768] |  2359296 |
+| encoder.encoder.layer.11.intermediate.dense.bias           |       [3072] |     3072 |
+| encoder.encoder.layer.11.output.dense.weight               |  [768, 3072] |  2359296 |
+| encoder.encoder.layer.11.output.dense.bias                 |        [768] |      768 |
+| encoder.encoder.layer.11.output.LayerNorm.weight           |        [768] |      768 |
+| encoder.encoder.layer.11.output.LayerNorm.bias             |        [768] |      768 |
+| encoder.pooler.dense.weight                                |   [768, 768] |   589824 |
+| encoder.pooler.dense.bias                                  |        [768] |      768 |
++------------------------------------------------------------+--------------+----------+
+03/15/2023 22:39:55 - INFO - __main__ -   Training/evaluation parameters Namespace(agg_way='avg', aug_type_way='random_replace_type', code_length=256, codebase_file='dataset/python/codebase.jsonl', config_name='DeepSoftwareAnalytics/CoCoSoDa', couninue_pre_train_data_files=['dataset/ruby/train.jsonl', 'dataset/java/train.jsonl'], data_aug_type='random_mask', data_flow_length=0, debug=False, device=device(type='cuda'), do_avg=False, do_continue_pre_trained=False, do_eval=False, do_fine_tune=False, do_ineer_loss=False, do_multi_lang_continue_pre_train=False, do_single_lang_continue_pre_train=False, do_test=True, do_train=False, do_whitening=False, do_zero_short=True, epoch=50, eval_batch_size=128, eval_data_file='dataset/java/valid.jsonl', eval_frequency=100, fp16=False, gradient_accumulation_steps=1, hidden_size=768, lang='python', learning_rate=2e-05, loaded_codebert_model_filename=None, loaded_model_filename=None, local_rank=-1, logging_steps=50, max_codeblock_num=10, max_grad_norm=1.0, max_steps=100, mlm_probability=0.1, mlp=False, moco_dim=768, moco_k=1024, moco_m=0.999, moco_t=0.07, moco_type='encoder_queue', model_name_or_path='DeepSoftwareAnalytics/CoCoSoDa', model_type='base', n_debug_samples=100, n_gpu=1, nl_length=128, num_train_epochs=4, num_warmup_steps=0, only_save_the_nl_code_vec=False, output_dir='./saved_models/zero-shot/python', print_align_unif_loss=False, save_evaluation_reuslt=False, save_evaluation_reuslt_dir=None, save_steps=50, seed=123456, test_data_file='dataset/python/test.jsonl', time_score=1, tokenizer_name='DeepSoftwareAnalytics/CoCoSoDa', train_batch_size=4, train_data_file='dataset/java/train.jsonl', use_best_mrr_model=False, weight_decay=0.01)
+03/15/2023 22:39:58 - INFO - __main__ -   runnning test
+03/15/2023 22:41:09 - INFO - __main__ -   ***** Running evaluation on python *****
+03/15/2023 22:41:09 - INFO - __main__ -     Num queries = 14918
+03/15/2023 22:41:09 - INFO - __main__ -     Num codes = 43827
+03/15/2023 22:41:09 - INFO - __main__ -     Batch size = 128
+03/15/2023 22:45:59 - INFO - __main__ -   ***** Eval test results *****
+03/15/2023 22:45:59 - INFO - __main__ -     R@1 = 0.589
+03/15/2023 22:45:59 - INFO - __main__ -     R@10 = 0.889
+03/15/2023 22:45:59 - INFO - __main__ -     R@5 = 0.828
+03/15/2023 22:45:59 - INFO - __main__ -     eval_mrr = 0.696
+03/15/2023 22:45:59 - INFO - utils -   saved dataset in ./saved_models/zero-shot/python/result.jsonl
