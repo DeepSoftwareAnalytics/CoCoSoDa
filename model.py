@@ -187,7 +187,7 @@ class Multi_Loss_CoCoSoDa( BaseModel):
         Output:
             logits, targets
         """
-        if self.args.do_multi_lang_continue_pre_train:
+        if not self.args.do_multi_lang_continue_pre_train:
             # logger.info(".do_multi_lang_continue_pre_train")
             outputs = self.code_encoder_q(source_code_q, attention_mask=source_code_q.ne(1))[0]
             code_q  = (outputs*source_code_q.ne(1)[:,:,None]).sum(1)/source_code_q.ne(1).sum(-1)[:,None] # None作为ndarray或tensor的索引作用是增加维度，
